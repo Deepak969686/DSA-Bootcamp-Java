@@ -18,7 +18,7 @@ public class Maze {
 
         pathRestrictions("", board, 0, 0);
     }
-
+//it is the code of if restriction given on the position of (1,1)
     static int count(int r, int c) {
         if (r == 1 || c == 1) {
             return 1;
@@ -27,7 +27,7 @@ public class Maze {
         int right = count(r, c-1);
         return left + right;
     }
-
+//it is the code of if restriction given on the position of (1,1)
     static void path(String p, int r, int c) {
         if (r == 1 && c == 1) {
             System.out.println(p);
